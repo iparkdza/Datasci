@@ -1,1 +1,14 @@
-<h1>Hello</h1>
+<html>
+	<head>
+		<title>Home Page</title>
+	</head>
+	<body>
+		<h1>Welcome</h1>
+		{% if form.username %}
+			<p>Welcome {{ form.username }}! Here you can show your content!</p><br/>
+			<a href="logout">logout<>
+		{% else %}
+			<p>Welcome anonymous user! You need to <a href="/login/">login</a></p>
+		{% endif %}
+	</body>
+</html>

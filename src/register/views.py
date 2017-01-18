@@ -22,3 +22,7 @@ def regis(request):
 			}
 	
 	return render(request, "regis.html", context)
+
+def login(request):
+	
+	return render(request, "login.html", {})
