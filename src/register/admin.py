@@ -5,7 +5,7 @@ from .forms import regisForm
 from .models import register
 
 class registerAdmin(admin.ModelAdmin):
-	list_display = ["__unicode__", "firstName", "lastName", "email", "gender"]
+	list_display = ["__unicode__", "firstName", "lastName", "email", "gender", "score"]
 	form = regisForm 
 	#class Meta:
 	#	model=register
